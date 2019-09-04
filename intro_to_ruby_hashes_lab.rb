@@ -49,7 +49,7 @@ def update_counting_hash(hash, key)
   
  hash[key] = 1 
  if update_counting_hash ["key"]
-  ["key"] += 1
+ update_counting_hash ["key"] += 1
 else
   ["key"] = 1
 end
