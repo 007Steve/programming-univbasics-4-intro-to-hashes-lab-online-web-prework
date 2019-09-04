@@ -48,5 +48,10 @@ def update_counting_hash(hash, key)
   # if the provided key is present, increment its value by 1
   
  hash[key]
- 
+ if shipping_manifest["key"]
+  shipping_manifest["key"] += 1
+else
+  shipping_manifest["key"] = 1
+end
+
 end
